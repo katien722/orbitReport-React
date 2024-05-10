@@ -1,4 +1,5 @@
 import satData from "./satData.jsx";
+import "./styling.css"
 
 const Buttons = ({ filterByType, setSat, orbitTypes }) => { 
  console.log(satData);
