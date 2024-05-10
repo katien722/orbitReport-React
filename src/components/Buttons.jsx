@@ -1,16 +1,22 @@
-import satData from "./components/satData"
+import satData from "./satData.jsx";
 
 const Buttons = ({ filterByType, setSat, orbitTypes }) => { //pass orbitTypes array of low, med, high
-  {orbitTypes.map(type, index) => {
+ console.log(satData);
   return (
     <div>
-      <button onClick={() => filterByType(type)} key = {index}>
-      {type} Orbit
-      </button>
-      ); 
-      }}}
-      <button onClick={() setSat}>All Orbits</button>
+      {orbitTypes.map((type, index) => {
+        return (
+          <button onClick={() => filterByType(type)} key={index}>
+            {type} Orbit
+
+          </button>
+        )
+      })}
+      <button onClick={() => setSat}>All Orbits</button>
     </div>
+
+  );
+
 };
 
 
