@@ -1,4 +1,6 @@
-    function Banner() {
+
+
+   function Banner() {
     return (
         <div>      
             <header>

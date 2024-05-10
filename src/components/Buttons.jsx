@@ -1,6 +1,6 @@
 import satData from "./satData.jsx";
 
-const Buttons = ({ filterByType, setSat, orbitTypes }) => { //pass orbitTypes array of low, med, high
+const Buttons = ({ filterByType, setSat, orbitTypes }) => { 
  console.log(satData);
   return (
     <div>
@@ -12,7 +12,7 @@ const Buttons = ({ filterByType, setSat, orbitTypes }) => { //pass orbitTypes ar
           </button>
         )
       })}
-      <button onClick={() => setSat}>All Orbits</button>
+      <button onClick={() => setSat(satData)}>All Orbits</button>
     </div>
 
   );
